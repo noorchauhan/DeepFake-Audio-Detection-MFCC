@@ -71,3 +71,8 @@ To classify an audio file as genuine or deepfake, follow these steps:
    ```
 
    Replace `path/to/your/audio/file.wav` with the path to the audio file you want to analyze. The script will extract MFCC features from the audio, scale the features using the saved scaler, pass the features to the trained SVM model, and display the classification result.
+
+
+## Contribution & License
+- For contributing, fork this project and compare and submit a pull request with proper description to your changed/added features
+- OpenSource MIT License, for more information read the License.
