@@ -1,4 +1,4 @@
-# AIAmplify Deepfake Audio Detection Project
+# Deepfake Audio Detection Project
 
 ## Overview
 This project was developed during the AIAmplify Hackathon, a 24-hour hackathon focused on using AI to address real-world challenges. The goal of this project is to detect deepfake audio using machine learning techniques. The project uses MFCC (Mel-frequency cepstral coefficients) features extracted from audio files and a Support Vector Machine (SVM) classifier to differentiate between genuine and deepfake audio.
