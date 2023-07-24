@@ -40,10 +40,7 @@ To initialize the project, follow these steps:
    source venv/bin/activate
    ```
 
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+3. Install the required dependencies
 
 ## How to Use Training the Model
 To train the SVM model with the provided data, follow these steps:
@@ -53,7 +50,12 @@ To train the SVM model with the provided data, follow these steps:
 
 2. Run the training script:
    ```
-   python train_model.py
+   python main.py
+   ```
+   After sucessfully running the main script, it will initially ask you to provide the path of the voice to analyze, provide it with the path and the
+3. Run the web app by:
+   ```
+   python app.py
    ```
 
    The training script will extract MFCC features from the audio files, split the data into training and testing sets, scale the features, train the SVM model, and save the trained model and scaler for future use.
