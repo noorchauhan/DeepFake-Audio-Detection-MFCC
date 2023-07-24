@@ -88,13 +88,11 @@ def train_model(X, y):
     joblib.dump(scaler, scaler_filename)
 
 def analyze_audio(input_audio_path):
-    # Load the trained SVM model and scaler
     model_filename = "svm_model.pkl"
     scaler_filename = "scaler.pkl"
     svm_classifier = joblib.load(model_filename)
     scaler = joblib.load(scaler_filename)
 
-    # Check if the input file exists and is a .wav file
     if not os.path.exists(input_audio_path):
         print("Error: The specified file does not exist.")
         return
@@ -114,27 +112,9 @@ def analyze_audio(input_audio_path):
     else:
         print("Error: Unable to process the input audio.")
 
-# def main():
-#     genuine_dir = r"C:\Users\numer\Desktop\Hackathon_AIDeepfake\real_audio"
-#     deepfake_dir = r"C:\Users\numer\Desktop\Hackathon_AIDeepfake\deepfake_audio"
-
-#     X_genuine, y_genuine = create_dataset(genuine_dir, label=0)
-#     X_deepfake, y_deepfake = create_dataset(deepfake_dir, label=1)
-
-#     X = np.vstack((X_genuine, X_deepfake))
-#     y = np.hstack((y_genuine, y_deepfake))
-
-#     train_model(X, y)
-
-# if __name__ == "__main__":
-#     main()
-
-#     user_input_file = input("Enter the path of the .wav file to analyze: ")
-#     analyze_audio(user_input_file)
-
 def main():
-    genuine_dir = r"C:\Users\numer\Desktop\FinalAIDeepfake_Hackathon\real_audio"
-    deepfake_dir = r"C:\Users\numer\Desktop\FinalAIDeepfake_Hackathon\deepfake_audio"
+    genuine_dir = r"path/to/real_audio/dir"
+    deepfake_dir = r"path/to/deepfake_audio/dir"
 
     X_genuine, y_genuine = create_dataset(genuine_dir, label=0)
     X_deepfake, y_deepfake = create_dataset(deepfake_dir, label=1)
