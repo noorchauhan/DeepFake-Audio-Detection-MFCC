@@ -12,7 +12,7 @@ keywords: {Deepfakes;Deep learning;Speech synthesis;Training data;Feature extrac
 URL: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9996362&isnumber=9668973
 
 
-## Contributors to this project
+## Contributors to this project code
 - Noor Chauhan
 - [Abhishek Khadgi](https://github.com/abhis-hek)
 - Omkar Sapkal
