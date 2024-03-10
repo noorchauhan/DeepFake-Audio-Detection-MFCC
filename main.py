@@ -113,8 +113,8 @@ def analyze_audio(input_audio_path):
         print("Error: Unable to process the input audio.")
 
 def main():
-    genuine_dir = r"path/to/real_audio/dir"
-    deepfake_dir = r"path/to/deepfake_audio/dir"
+    genuine_dir = r"/workspaces/DeepFake-Audio-Detection-MFCC/real_audio"
+    deepfake_dir = r"/workspaces/DeepFake-Audio-Detection-MFCC/deepfake_audio"
 
     X_genuine, y_genuine = create_dataset(genuine_dir, label=0)
     X_deepfake, y_deepfake = create_dataset(deepfake_dir, label=1)
